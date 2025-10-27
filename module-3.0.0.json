@@ -1,0 +1,215 @@
+{
+  "id": "dnd-tashas-cauldron",
+  "title": "Tasha's Cauldron of Everything",
+  "description": "<p>Natasha the Dark, Iggwilv the Witch Queen, daughter of Baba Yaga or simply the witch named Tasha, well-known for her spells such as Tasha\u2019s hideous laughter, has compiled all the precious lore she has gathered during her illustrious career as an adventurer for the enrichment of all. Her book offers a taste of the great power that awaits D&D players and dungeon masters everywhere! It contains new player subclasses, sidekicks, and rules and tools for Dungeon Masters.</p>",
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/dnd-tashas-cauldron/assets/art/tashas-cover.webp",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "version": "3.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "documentTypes": {
+    "Item": {
+      "tattoo": {
+        "htmlFields": [
+          "description.value",
+          "description.chat",
+          "unidentified.description"
+        ]
+      }
+    }
+  },
+  "esmodules": [
+    "scripts/dnd-tashas-cauldron.mjs"
+  ],
+  "styles": [
+    "styles/dnd-tashas-cauldron.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.1.7"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "tcoe-content",
+      "label": "Tasha's Cauldron of Everything",
+      "path": "packs/tcoe-content",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {
+        "dnd5e": {
+          "display": "table-of-contents"
+        }
+      }
+    },
+    {
+      "name": "tcoe-character-options",
+      "label": "Character Options",
+      "path": "packs/tcoe-character-options",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "class",
+            "subclass",
+            "feat",
+            "spell",
+            "weapon"
+          ]
+        }
+      }
+    },
+    {
+      "name": "tcoe-magic-items",
+      "label": "Items",
+      "path": "packs/tcoe-magic-items",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "weapon",
+            "equipment",
+            "consumable",
+            "tool",
+            "container",
+            "dnd-tashas-cauldron.tattoo"
+          ]
+        }
+      }
+    },
+    {
+      "name": "tcoe-tables",
+      "label": "Tasha's Tables",
+      "path": "packs/tcoe-tables",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "tcoe-actors",
+      "label": "Tasha's Actors",
+      "path": "packs/tcoe-actors",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {
+        "dnd5e": {
+          "types": [
+            "character",
+            "npc"
+          ]
+        }
+      }
+    },
+    {
+      "name": "tcoe-dm-tools",
+      "label": "Dungeon Master's Tools",
+      "path": "packs/tcoe-dm-tools",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {
+        "dnd5e": {
+          "display": "table-of-contents"
+        }
+      }
+    },
+    {
+      "name": "tcoe-scenes",
+      "label": "Scenes",
+      "path": "packs/tcoe-scenes",
+      "type": "Scene",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Tasha's Cauldron of Everything",
+      "color": "#344358",
+      "sorting": "m",
+      "packs": [
+        "tcoe-content",
+        "tcoe-character-options",
+        "tcoe-tables",
+        "tcoe-actors",
+        "tcoe-magic-items",
+        "tcoe-dm-tools",
+        "tcoe-scenes"
+      ]
+    }
+  ],
+  "url": "https://foundryvtt.com/packages/dnd-tashas-cauldron",
+  "manifest": "https://r2.foundryvtt.com/packages-public/dnd-tashas-cauldron/module.json",
+  "protected": false,
+  "changelog": "https://github.com/foundryvtt/foundryvtt-premium-content/discussions/608",
+  "flags": {
+    "hotReload": false,
+    "tokenRingSubjectMappings": {
+      "modules/dnd-tashas-cauldron/assets/tokens/": "modules/dnd-tashas-cauldron/assets/subjects/"
+    },
+    "dnd5e": {
+      "sourceBooks": {
+        "TCoE": "TCOE.Title"
+      },
+      "spellLists": [
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.btQIVPtSLQewCrTZ",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.S7h7mJzR4AQK09ei",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.jq8G9NnSjnEBCP8j",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.sbkRSmFhwCTQWrAU",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.EBBsBF8KCPL7NlXv",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.v7FEEIRGjDiO5kDq",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.HgktirAKE31kSJ8a",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.X9fZ7m7cmAdN108q",
+        "Compendium.dnd-tashas-cauldron.tcoe-content.JournalEntry.tcoeSpellLists00.JournalEntryPage.rHOKftL05MGoJQjT"
+      ]
+    }
+  }
+}
